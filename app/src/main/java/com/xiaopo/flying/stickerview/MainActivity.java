@@ -230,6 +230,7 @@ public class MainActivity extends AppCompatActivity {
     sticker.setTextColor(Color.BLUE);
     sticker.setTextAlign(Layout.Alignment.ALIGN_CENTER);
     sticker.resizeText();
+    sticker.setShadowLayer(1,5,5,Color.RED);
 
     stickerView.addSticker(sticker);
   }

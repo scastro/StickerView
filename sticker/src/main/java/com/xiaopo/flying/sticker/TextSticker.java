@@ -139,6 +139,11 @@ public class TextSticker extends Sticker {
     return this;
   }
 
+  public TextSticker setShadowLayer(float radius, float dx, float dy, int shadowColor) {
+    this.textPaint.setShadowLayer(radius,dx,dy,shadowColor);
+    return this;
+  }
+
   @NonNull public TextSticker setDrawable(@NonNull Drawable drawable, @Nullable Rect region) {
     this.drawable = drawable;
     realBounds.set(0, 0, getWidth(), getHeight());
